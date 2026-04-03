@@ -18,9 +18,19 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if(thrust.IsPressed())
+        ProcessThrust();
+        ProcessRotation();
+    }
+    private void ProcessThrust()
+    {
+        if (thrust.IsPressed())
         {
             rb.AddRelativeForce(Vector3.up * thrustForce * Time.deltaTime);
         }
+    }
+    private void ProcessRotation()
+    {
+       float rotationInput = rotation.ReadValue<float>();
+       Debug.Log(rotationInput);
     }
 }
