@@ -13,11 +13,11 @@ public class Player : MonoBehaviour
     {
         thrust.Enable();
     }
-    void Update()
+    void FixedUpdate()
     {
         if(thrust.IsPressed())
         {
-            Debug.Log("Thrust pressed");
+            rb.AddRelativeForce(0, 0.2f, 0);
         }
     }
 }
