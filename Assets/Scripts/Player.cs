@@ -31,6 +31,9 @@ public class Player : MonoBehaviour
     private void ProcessRotation()
     {
        float rotationInput = rotation.ReadValue<float>();
-       Debug.Log(rotationInput);
+       if(rotationInput > 0)
+        {
+            
+        }
     }
 }
