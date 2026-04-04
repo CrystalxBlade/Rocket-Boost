@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     [SerializeField] InputAction thrust;
     [SerializeField] InputAction rotation;
     [SerializeField] float thrustForce;
+    [SerializeField] float rotationStrength;
     Rigidbody rb;
     void Start()
     {
@@ -35,7 +36,7 @@ public class Player : MonoBehaviour
         {
             transform.Rotate(0,0,1);
         }
-        else if(rotationInput > 0)
+        else
         {
             transform.Rotate(0,0,-1);
         }
