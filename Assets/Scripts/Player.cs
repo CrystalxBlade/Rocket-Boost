@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     {
         if (thrust.IsPressed())
         {
-            rb.AddRelativeForce(Vector3.up * thrustForce * Time.deltaTime);
+            rb.AddRelativeForce(Vector3.up * thrustForce * Time.fixedDeltaTime);
         }
     }
     private void ProcessRotation()
@@ -34,11 +34,11 @@ public class Player : MonoBehaviour
        float rotationInput = rotation.ReadValue<float>();
        if(rotationInput < 0)
         {
-            transform.Rotate(0,0,1);
+            transform.Rotate(Vector3.forward * rotationStrength * Time.fixedDeltaTime);
         }
         else
         {
-            transform.Rotate(0,0,-1);
+            transform.Rotate(-Vector3.forward * rotationStrength * Time.fixedDeltaTime);
         }
     }
 }
