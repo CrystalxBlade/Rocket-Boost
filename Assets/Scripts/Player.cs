@@ -34,11 +34,15 @@ public class Player : MonoBehaviour
        float rotationInput = rotation.ReadValue<float>();
        if(rotationInput < 0)
         {
-            transform.Rotate(Vector3.forward * rotationStrength * Time.fixedDeltaTime);
+            ApplyRotation(rotationStrength);
         }
         else if(rotationInput > 0)
         {
-            transform.Rotate(Vector3.forward * -rotationStrength * Time.fixedDeltaTime);
+            ApplyRotation(-rotationStrength);
         }
+    }
+    private void ApplyRotation(float rotateThisFrame)
+    {
+        transform.Rotate(Vector3.forward * rotateThisFrame * Time.fixedDeltaTime);
     }
 }
