@@ -36,9 +36,9 @@ public class Player : MonoBehaviour
         {
             transform.Rotate(Vector3.forward * rotationStrength * Time.fixedDeltaTime);
         }
-        else
+        else if(rotationInput > 0)
         {
-            transform.Rotate(-Vector3.forward * rotationStrength * Time.fixedDeltaTime);
+            transform.Rotate(Vector3.forward * -rotationStrength * Time.fixedDeltaTime);
         }
     }
 }
