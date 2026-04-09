@@ -7,10 +7,12 @@ public class Player : MonoBehaviour
     [SerializeField] InputAction rotation;
     [SerializeField] float thrustForce;
     [SerializeField] float rotationStrength;
+    [SerializeField] AudioSource audioSource;
     Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void OnEnable()
     {
