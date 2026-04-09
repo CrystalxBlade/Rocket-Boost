@@ -29,7 +29,14 @@ public class Player : MonoBehaviour
         if (thrust.IsPressed())
         {
             rb.AddRelativeForce(Vector3.up * thrustForce * Time.fixedDeltaTime);
-            audioSource.Play();
+            if(!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+            else
+            {
+                audioSource.Stop();
+            }
         }
     }
     private void ProcessRotation()
