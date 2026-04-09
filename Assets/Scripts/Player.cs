@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
     }
     private void ApplyRotation(float rotateThisFrame)
     {
+        rb.freezeRotation = true;
         transform.Rotate(Vector3.forward * rotateThisFrame * Time.fixedDeltaTime);
     }
 }
