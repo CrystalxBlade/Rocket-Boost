@@ -2,15 +2,22 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnCollisionEnter(Collision other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        switch(other.gameObject.tag)
+        {
+            case "Friendly":
+            Debug.Log("Everything is looking good");
+            break;
+            case "Finish":
+            Debug.Log("You're all done");
+            break;
+            case "Fuel":
+            Debug.Log("Sorry I don't have any");
+            break;
+            default:
+            Debug.Log("Your crashed dummy");
+            break; 
+        }
     }
 }
