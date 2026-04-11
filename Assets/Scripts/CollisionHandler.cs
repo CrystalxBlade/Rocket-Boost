@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other)
@@ -10,14 +10,26 @@ public class CollisionHandler : MonoBehaviour
             Debug.Log("Everything is looking good");
             break;
             case "Finish":
-            Debug.Log("You're all done");
+            LoadNextLvl();
             break;
             case "Fuel":
             Debug.Log("Sorry I don't have any");
             break;
             default:
-            Debug.Log("Your crashed dummy");
+            Reload();
             break; 
         }
+    }
+
+    void LoadNextLvl()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene + 1); 
+    }
+
+    void Reload()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene); 
     }
 }
