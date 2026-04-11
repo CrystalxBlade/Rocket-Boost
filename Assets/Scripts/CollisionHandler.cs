@@ -7,17 +7,17 @@ public class CollisionHandler : MonoBehaviour
         switch(other.gameObject.tag)
         {
             case "Friendly":
-            Debug.Log("Everything is looking good");
-            break;
+                  Debug.Log("Everything is looking good");
+                  break;
             case "Finish":
-            LoadNextLvl();
-            break;
+                  LoadNextLvl();
+                  break;
             case "Fuel":
-            Debug.Log("Sorry I don't have any");
-            break;
+                  Debug.Log("Sorry I don't have any");
+                  break;
             default:
-            Reload();
-            break; 
+                  Reload();
+                  break; 
         }
     }
 
