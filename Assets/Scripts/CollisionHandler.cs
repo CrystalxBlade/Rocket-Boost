@@ -24,6 +24,12 @@ public class CollisionHandler : MonoBehaviour
     void LoadNextLvl()
     {
         int currentScene = SceneManager.GetActiveScene().buildIndex;
+        int nextScene = currentScene + 1;
+        if(nextScene == SceneManager.sceneCountInBuildSettings)
+        {
+            
+        }
+
         SceneManager.LoadScene(currentScene + 1); 
     }
     void Reload()
