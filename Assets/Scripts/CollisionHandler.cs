@@ -26,7 +26,6 @@ public class CollisionHandler : MonoBehaviour
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene + 1); 
     }
-
     void Reload()
     {
         int currentScene = SceneManager.GetActiveScene().buildIndex;
