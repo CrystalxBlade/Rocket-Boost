@@ -16,21 +16,19 @@ public class CollisionHandler : MonoBehaviour
                   Debug.Log("Sorry I don't have any");
                   break;
             default:
-                  Reload();
+                  Invoke("Reload", 4f); 
                   break; 
         }
     }
-
     void LoadNextLvl()
     {
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         int nextScene = currentScene + 1;
         if(nextScene == SceneManager.sceneCountInBuildSettings)
         {
-            
+            nextScene = 0;
         }
-
-        SceneManager.LoadScene(currentScene + 1); 
+        SceneManager.LoadScene(nextScene); 
     }
     void Reload()
     {
