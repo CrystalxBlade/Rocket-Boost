@@ -16,12 +16,13 @@ public class CollisionHandler : MonoBehaviour
                   Debug.Log("Sorry I don't have any");
                   break;
             default:
-                  Invoke("Reload", 2f); 
+                  CrashState(); 
                   break;
         }
     }
     void CrashState()
     {
+        GetComponent<Player>().enabled = false;
         Invoke("Reload",2f);
     }
     void LoadNextLvl()
