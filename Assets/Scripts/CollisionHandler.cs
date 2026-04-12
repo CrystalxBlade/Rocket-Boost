@@ -17,8 +17,12 @@ public class CollisionHandler : MonoBehaviour
                   break;
             default:
                   Invoke("Reload", 2f); 
-                  break; 
+                  break;
         }
+    }
+    void CrashState()
+    {
+        Invoke("Reload",2f);
     }
     void LoadNextLvl()
     {
