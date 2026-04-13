@@ -10,6 +10,7 @@ public class CollisionHandler : MonoBehaviour
                   Debug.Log("Everything is looking good");
                   break;
             case "Finish":
+                  
                   Invoke("LoadNextLvl", 2f); 
                   break;
             case "Fuel":
