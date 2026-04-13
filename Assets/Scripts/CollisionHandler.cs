@@ -22,9 +22,9 @@ public class CollisionHandler : MonoBehaviour
                   break;
         }
     }
-
     private void NextLvl()
     {
+        GetComponent<Player>().enabled = false;
         Invoke("LoadNextLvl", delayLvl); 
     }
     void CrashState()
