@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] float delayLvl;
     private void OnCollisionEnter(Collision other)
     {
         switch(other.gameObject.tag)
@@ -10,8 +12,7 @@ public class CollisionHandler : MonoBehaviour
                   Debug.Log("Everything is looking good");
                   break;
             case "Finish":
-                  
-                  Invoke("LoadNextLvl", 2f); 
+                  NextLvl();             
                   break;
             case "Fuel":
                   Debug.Log("Sorry I don't have any");
@@ -20,6 +21,11 @@ public class CollisionHandler : MonoBehaviour
                   CrashState(); 
                   break;
         }
+    }
+
+    private void NextLvl()
+    {
+        Invoke("LoadNextLvl", delayLvl); 
     }
     void CrashState()
     {
