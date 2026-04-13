@@ -30,7 +30,7 @@ public class CollisionHandler : MonoBehaviour
     void CrashState()
     {
         GetComponent<Player>().enabled = false;
-        Invoke("Reload",2f);
+        Invoke("Reload", delayLvl);
     }
     void LoadNextLvl()
     {
