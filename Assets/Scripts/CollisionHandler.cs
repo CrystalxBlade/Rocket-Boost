@@ -24,11 +24,13 @@ public class CollisionHandler : MonoBehaviour
     }
     private void NextLvl()
     {
+        // todo add sound fx
         GetComponent<Player>().enabled = false;
         Invoke("LoadNextLvl", delayLvl); 
     }
     void CrashState()
     {
+        // todo add sound fx
         GetComponent<Player>().enabled = false;
         Invoke("Reload", delayLvl);
     }
