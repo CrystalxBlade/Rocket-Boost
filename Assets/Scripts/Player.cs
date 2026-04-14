@@ -31,8 +31,8 @@ public class Player : MonoBehaviour
         {
             rb.AddRelativeForce(Vector3.up * thrustForce * Time.fixedDeltaTime);
             if(!audioSource.isPlaying)
-            {
-                audioSource.Play();
+            { 
+                audioSource.PlayOneShot(mainEngine);
             }
             else
             {
