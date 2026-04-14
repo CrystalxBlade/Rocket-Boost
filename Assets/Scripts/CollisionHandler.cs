@@ -20,6 +20,7 @@ public class CollisionHandler : MonoBehaviour
                   Debug.Log("Sorry I don't have any");
                   break;
             default:
+            audioSource.PlayOneShot(crash);
                   CrashState(); 
                   break;
         }
@@ -32,7 +33,6 @@ public class CollisionHandler : MonoBehaviour
     }
     void CrashState()
     {
-        audioSource.PlayOneShot(crash);
         GetComponent<Player>().enabled = false;
         Invoke("Reload", delayLvl);
     }
