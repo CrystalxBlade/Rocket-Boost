@@ -33,6 +33,7 @@ public class CollisionHandler : MonoBehaviour
     }
     void CrashState()
     {
+        audioSource.PlayOneShot(crash);
         GetComponent<Player>().enabled = false;
         Invoke("Reload", delayLvl);
     }
