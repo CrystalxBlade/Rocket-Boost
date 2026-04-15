@@ -819,18 +819,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
-      propertyPath: crash
-      value: 
-      objectReference: {fileID: 8300000, guid: 044c177931f1a7c438f90c0d7e243b06, type: 3}
-    - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
-      propertyPath: success
-      value: 
-      objectReference: {fileID: 8300000, guid: c73cd9ad73c7ab94194d5baa6b5af92f, type: 3}
-    - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
-      propertyPath: delayLvl
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7282082167968523647, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9
@@ -871,10 +859,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8942572280467893150, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
-      propertyPath: mainEngine
-      value: 
-      objectReference: {fileID: 8300000, guid: 2a4ef7b0bf4d6944f85cbcb5f7c98166, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

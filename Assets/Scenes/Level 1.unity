@@ -776,7 +776,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: c73cd9ad73c7ab94194d5baa6b5af92f, type: 3}
     - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
       propertyPath: delayLvl
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7282082167968523647, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
       propertyPath: m_LocalPosition.x
