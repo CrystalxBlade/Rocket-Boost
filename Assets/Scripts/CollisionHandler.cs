@@ -20,7 +20,6 @@ public class CollisionHandler : MonoBehaviour
                   Debug.Log("Sorry I don't have any");
                   break;
             default:
-            audioSource.PlayOneShot(crash);
                   CrashState(); 
                   break;
         }
