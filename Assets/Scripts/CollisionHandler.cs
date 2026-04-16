@@ -35,6 +35,7 @@ public class CollisionHandler : MonoBehaviour
     private void NextLvl()
     {
         isControllable = false;
+        audioSource.Stop();
         audioSource.PlayOneShot(success);
         GetComponent<Player>().enabled = false;
         Invoke("LoadNextLvl", delayLvl); 
@@ -42,6 +43,7 @@ public class CollisionHandler : MonoBehaviour
     void CrashState()
     {
         isControllable = false;
+        audioSource.Stop();
         audioSource.PlayOneShot(crash);
         GetComponent<Player>().enabled = false;
         Invoke("Reload", delayLvl);
