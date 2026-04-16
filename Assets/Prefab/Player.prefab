@@ -99,7 +99,7 @@ MonoBehaviour:
       m_Action: Rotation
       m_Flags: 8
     m_Flags: 0
-  thrustForce: 700
+  thrustForce: 1000
   rotationStrength: 100
   mainEngine: {fileID: 8300000, guid: 2a4ef7b0bf4d6944f85cbcb5f7c98166, type: 3}
 --- !u!54 &7467273702179030984
@@ -260,6 +260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
   delayLvl: 2
+  crash: {fileID: 8300000, guid: 044c177931f1a7c438f90c0d7e243b06, type: 3}
+  success: {fileID: 8300000, guid: c73cd9ad73c7ab94194d5baa6b5af92f, type: 3}
 --- !u!1001 &5116511374192585984
 PrefabInstance:
   m_ObjectHideFlags: 0
