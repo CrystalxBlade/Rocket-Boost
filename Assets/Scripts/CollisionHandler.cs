@@ -7,12 +7,15 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float delayLvl;
     [SerializeField] AudioClip crash, success;
     AudioSource audioSource;
+    bool isControllable = true;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
     private void OnCollisionEnter(Collision other)
     {
+        if(!isControllable) { return; }
+
         switch(other.gameObject.tag)
         {
             case "Friendly":
@@ -31,12 +34,14 @@ public class CollisionHandler : MonoBehaviour
     }
     private void NextLvl()
     {
+        isControllable = false;
         audioSource.PlayOneShot(success);
         GetComponent<Player>().enabled = false;
         Invoke("LoadNextLvl", delayLvl); 
     }
     void CrashState()
     {
+        isControllable = false;
         audioSource.PlayOneShot(crash);
         GetComponent<Player>().enabled = false;
         Invoke("Reload", delayLvl);
