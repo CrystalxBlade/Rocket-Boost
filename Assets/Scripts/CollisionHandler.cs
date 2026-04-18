@@ -38,7 +38,7 @@ public class CollisionHandler : MonoBehaviour
         isControllable = false;
         audioSource.Stop();
         audioSource.PlayOneShot(successSFX);
-        crashPartical.Play();
+        successPartical.Play();
         GetComponent<Player>().enabled = false;
         Invoke("LoadNextLvl", delayLvl); 
     }
@@ -47,7 +47,7 @@ public class CollisionHandler : MonoBehaviour
         isControllable = false;
         audioSource.Stop();
         audioSource.PlayOneShot(crashSFX);
-        successPartical.Play();
+        crashPartical.Play();
         GetComponent<Player>().enabled = false;
         Invoke("Reload", delayLvl);
     }
