@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] float thrustForce;
     [SerializeField] float rotationStrength;
     [SerializeField] AudioClip mainEngine;
+    [SerializeField] ParticleSystem mainBooster, leftBooster, rightBooster; 
     AudioSource audioSource;
     Rigidbody rb;
     void Start()
