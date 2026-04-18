@@ -262,8 +262,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
   delayLvl: 2
-  crash: {fileID: 8300000, guid: 044c177931f1a7c438f90c0d7e243b06, type: 3}
-  success: {fileID: 8300000, guid: c73cd9ad73c7ab94194d5baa6b5af92f, type: 3}
+  crashSFX: {fileID: 8300000, guid: 044c177931f1a7c438f90c0d7e243b06, type: 3}
+  successSFX: {fileID: 8300000, guid: c73cd9ad73c7ab94194d5baa6b5af92f, type: 3}
+  successParticles: {fileID: 198631066050499358, guid: 62198a3a5dbb64a4f9e1618929224faa, type: 3}
+  crashParticles: {fileID: 198204746014789312, guid: ab79a37535b979f48b6de56e3a0a5cb0, type: 3}
 --- !u!1001 &2529425716702947049
 PrefabInstance:
   m_ObjectHideFlags: 0
