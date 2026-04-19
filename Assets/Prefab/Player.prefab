@@ -107,9 +107,9 @@ MonoBehaviour:
   thrustForce: 1000
   rotationStrength: 100
   mainEngine: {fileID: 8300000, guid: 2a4ef7b0bf4d6944f85cbcb5f7c98166, type: 3}
-  mainBooster: {fileID: 0}
-  leftBooster: {fileID: 0}
-  rightBooster: {fileID: 0}
+  mainBooster: {fileID: 7132057970947715021}
+  leftBooster: {fileID: 5460504690284123878}
+  rightBooster: {fileID: 4716209832449134078}
 --- !u!54 &7467273702179030984
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -405,6 +405,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
   m_PrefabInstance: {fileID: 4889411682079590532}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &5460504690284123878 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 584678573886053986, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+  m_PrefabInstance: {fileID: 4889411682079590532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5116511374192585984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -528,6 +533,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+--- !u!198 &4716209832449134078 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 584678573886053986, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+  m_PrefabInstance: {fileID: 5291278531892302748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4890084433842063286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
@@ -597,6 +607,11 @@ PrefabInstance:
 --- !u!4 &6941294796830139781 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4940884351362868, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
+  m_PrefabInstance: {fileID: 6937200811599479473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7132057970947715021 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198100719057022332, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
   m_PrefabInstance: {fileID: 6937200811599479473}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7046591616643364830

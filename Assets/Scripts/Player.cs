@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
             if(!audioSource.isPlaying)
             { 
                 audioSource.PlayOneShot(mainEngine);
+                mainBooster.Play();
             }
             else
             {
@@ -46,10 +47,12 @@ public class Player : MonoBehaviour
        float rotationInput = rotation.ReadValue<float>();
        if(rotationInput < 0)
         {
+            leftBooster.Play();
             ApplyRotation(rotationStrength);
         }
         else if(rotationInput > 0)
         {
+            rightBooster.Play(); 
             ApplyRotation(-rotationStrength);
         }
     }
