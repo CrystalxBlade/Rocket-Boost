@@ -1,6 +1,7 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
@@ -15,8 +16,16 @@ public class CollisionHandler : MonoBehaviour
     }
     void Update()
     {
-        
+        RespondToDebugKeys();
     }
+    void RespondToDebugKeys()
+    {
+        if(Keyboard.current.lKey.isPressed)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
     private void OnCollisionEnter(Collision other)
     {
         if(!isControllable) { return; }
