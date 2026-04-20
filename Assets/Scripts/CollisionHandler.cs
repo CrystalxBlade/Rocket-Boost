@@ -13,6 +13,10 @@ public class CollisionHandler : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
     }
+    void Update()
+    {
+        
+    }
     private void OnCollisionEnter(Collision other)
     {
         if(!isControllable) { return; }
