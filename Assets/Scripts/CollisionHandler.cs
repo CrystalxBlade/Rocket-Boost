@@ -20,9 +20,9 @@ public class CollisionHandler : MonoBehaviour
     }
     void RespondToDebugKeys()
     {
-        if(Keyboard.current.lKey.isPressed)
+        if(Keyboard.current.lKey.wasPressedThisFrame)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            LoadNextLvl();
         }
     }
 
