@@ -25,7 +25,6 @@ public class CollisionHandler : MonoBehaviour
             LoadNextLvl();
         }
     }
-
     private void OnCollisionEnter(Collision other)
     {
         if(!isControllable) { return; }
