@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
   delayLvl: 3
-  crashSFX: {fileID: 8300000, guid: 044c177931f1a7c438f90c0d7e243b06, type: 3}
+  crashSFX: {fileID: 8300000, guid: f7fc3fa928a28ce4c86c5eb4bcd6066f, type: 3}
   successSFX: {fileID: 8300000, guid: c73cd9ad73c7ab94194d5baa6b5af92f, type: 3}
   crashPartical: {fileID: 7136709623608244510}
   successPartical: {fileID: 2439823651875141111}
