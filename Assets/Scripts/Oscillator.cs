@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Oscillator : MonoBehaviour
@@ -14,7 +15,7 @@ public class Oscillator : MonoBehaviour
     }
     void Update()
     {
-        
+        movementfactor = Mathf.PingPong(Time.time * speed, 1);
         transform.position = Vector3.Lerp(startPos, endPos, movementfactor);
     }
 }
