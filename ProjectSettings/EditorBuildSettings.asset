@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Flash.unity
+    guid: 9247965cf2eeb2e4e95c4099ad23d959
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Scenes/Level 2.unity
-    guid: 81fcbb69e23a3c748ae07040aa8367a9
-  - enabled: 1
-    path: Assets/Scenes/Level 3.unity
-    guid: 092e0170e691bc94d8b0c79f716c7b9b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
