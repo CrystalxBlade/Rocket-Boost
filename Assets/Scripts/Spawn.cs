@@ -1,16 +1,28 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] GameObject ship;
+    [SerializeField] float spawnTime;
+    float timer;
     void Start()
     {
-        
+        timer = 0;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+        if(timer > spawnTime)
+        {
+            SpawnShip();
+            timer = 0;
+        }
+    }
+    void SpawnShip()
+    {
+        Vector3 pos = transform.position + new Vector3(0, 0, 0);
+
+        Instantiate(ship, pos, Quaternion.identity);
     }
 }
