@@ -21,8 +21,6 @@ public class Spawn : MonoBehaviour
     }
     void SpawnShip()
     {
-        Vector3 pos = transform.position + new Vector3(0, 0, 0);
-
-        Instantiate(ship, pos, Quaternion.identity);
+        Instantiate(ship, transform.position, Quaternion.identity);
     }
 }
