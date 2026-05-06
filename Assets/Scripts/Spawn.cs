@@ -9,6 +9,7 @@ public class Spawn : MonoBehaviour
     void Start()
     {
         timer = 0;
+        SpawnShip();
     }
     void Update()
     {
@@ -21,6 +22,6 @@ public class Spawn : MonoBehaviour
     }
     void SpawnShip()
     {
-        Instantiate(ship, transform.position, Quaternion.identity);
+        Instantiate(ship, transform.position, Quaternion.Euler(0, 10, 0));
     }
 }

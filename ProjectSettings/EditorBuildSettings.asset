@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Flash.unity
     guid: 9247965cf2eeb2e4e95c4099ad23d959
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9f43cd4de8f126041aeb68228c065a32
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

@@ -2,13 +2,10 @@ using UnityEngine;
 
 public class MoveShip : MonoBehaviour
 {
-    [SerializeField] float moveSpeed;
-    void Start()
-    {
-        
-    }
+    [SerializeField] Vector3 direction;
     void Update()
     {
-        transform.Translate(0, 0, -moveSpeed * Time.deltaTime);
+        transform.Translate(direction * Time.deltaTime);
+        Destroy(gameObject, 10);
     }
 }
