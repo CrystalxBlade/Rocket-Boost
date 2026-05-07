@@ -1,16 +1,30 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Home : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Play()
     {
-        
+        int lvl = PlayerPrefs.GetInt("Level", 2);
+        if(lvl >= 2 && lvl <= 3)
+        {
+            SceneManager.LoadScene(lvl);
+        }
+        else if(lvl > 3)
+        {
+            SceneManager.LoadScene(4);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Levels()
     {
-        
+        SceneManager.LoadScene("Levels");
+    }
+    public void Reset()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

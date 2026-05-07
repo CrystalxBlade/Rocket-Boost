@@ -4997,4 +4997,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1cd603d0e0f0e4f9ff71de9d2ce52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveShip
-  direction: {x: -60, y: 0, z: 0}
+  direction: {x: -40, y: 0, z: 0}
