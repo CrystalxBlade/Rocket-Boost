@@ -1,16 +1,23 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Levels : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] int lvlNo;
     void Start()
     {
-        
+        if(lvlNo <= PlayerPrefs.GetInt("Level",2))
+        {
+            gameObject.GetComponent<Button>().interactable = true;
+        }
+        else
+        {
+            gameObject.GetComponent<Button>().interactable = false;
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    public void LoadLvl()
     {
-        
+        SceneManager.LoadScene(lvlNo);
     }
 }

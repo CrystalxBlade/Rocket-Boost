@@ -67,9 +67,10 @@ public class CollisionHandler : MonoBehaviour
     {
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         int nextScene = currentScene + 1;
-        if(nextScene == SceneManager.sceneCountInBuildSettings)
+        if(nextScene > PlayerPrefs.GetInt("Level"))
         {
-            nextScene = 0;
+            PlayerPrefs.SetInt("Level", nextScene);
+            SceneManager.LoadScene(nextScene);
         }
         SceneManager.LoadScene(nextScene); 
     }
