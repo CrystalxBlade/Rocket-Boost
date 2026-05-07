@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 public class SplashLoader : MonoBehaviour
 {
     [SerializeField] float delay = 10f;
-    [SerializeField] string nextScene = "Menu";
+    [SerializeField] string nextScene;
     void Start()
     {
         Invoke("LoadNext", delay);

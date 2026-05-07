@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SplashLoader
   delay: 10
-  nextScene: Level 1
+  nextScene: Home
 --- !u!82 &1577819193
 AudioSource:
   m_ObjectHideFlags: 0
