@@ -32870,6 +32870,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
+      propertyPath: pauseScreen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
+      propertyPath: escape.m_Name
+      value: Escape
+      objectReference: {fileID: 0}
+    - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
+      propertyPath: escape.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
+      propertyPath: escape.m_SingletonActionBindings.Array.data[0].m_Id
+      value: ab1e9032-fa1b-41a0-bcd1-daeb7bd0d898
+      objectReference: {fileID: 0}
+    - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
+      propertyPath: escape.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/escape
+      objectReference: {fileID: 0}
+    - target: {fileID: 839566993863901085, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
+      propertyPath: escape.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Escape
+      objectReference: {fileID: 0}
     - target: {fileID: 6941294796830139781, guid: d8ceca0f7311f214b9fe4532ee3f5436, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.112

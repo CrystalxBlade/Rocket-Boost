@@ -7,7 +7,18 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] AudioClip crashSFX, successSFX;
     AudioSource audioSource;
     [SerializeField] ParticleSystem crashPartical, successPartical;
+    [SerializeField] InputAction escape;
+    [SerializeField] GameObject pauseScreen;
+    bool pause;
     bool isControllable = true;
+    void OnEnable()
+    {
+        escape.Enable();
+    }
+    void OnDisable()
+    {
+        escape.Disable();
+    }
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -15,6 +26,16 @@ public class CollisionHandler : MonoBehaviour
     void Update()
     {
         RespondToDebugKeys();
+        if(escape.WasPressedThisFrame())
+        {
+            TogglePause();
+        }
+    }
+    void TogglePause()
+    {
+        pause = !pause;
+        pauseScreen.SetActive(pause);
+        Time.timeScale = pause ? 0f : 1f;
     }
     void RespondToDebugKeys()
     {
