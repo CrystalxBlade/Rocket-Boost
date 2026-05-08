@@ -1,5 +1,3 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -70,7 +68,7 @@ public class CollisionHandler : MonoBehaviour
         if(nextScene > PlayerPrefs.GetInt("Level"))
         {
             PlayerPrefs.SetInt("Level", nextScene);
-            SceneManager.LoadScene(nextScene);
+            //SceneManager.LoadScene(nextScene);
         }
         SceneManager.LoadScene(nextScene); 
     }
