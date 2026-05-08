@@ -2,16 +2,25 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
-    public void Resume()
+    [SerializeField] GameObject pauseScreen;
+
+    void Update()
     {
-        Time.timeScale = 1f;
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseScreen.SetActive(true);
+        }
     }
-    public void Menu()
-    {
-        SceneManager.LoadScene("Home");
-    }
-    public void Quit()
-    {
-        Application.Quit();
-    }
+    // public void Resume()
+    // {
+    //     Time.timeScale = 1f;
+    // }
+    // public void Menu()
+    // {
+    //     SceneManager.LoadScene("Home");
+    // }
+    // public void Quit()
+    // {
+    //     Application.Quit();
+    // }
 }
