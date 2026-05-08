@@ -21,6 +21,11 @@ public class Player : MonoBehaviour
         thrust.Enable();
         rotation.Enable();
     }
+    private void OnDisable()
+    {
+        thrust.Disable();
+        rotation.Disable();
+    }
     void FixedUpdate()
     {
         ProcessThrust();

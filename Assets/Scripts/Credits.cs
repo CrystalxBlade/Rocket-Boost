@@ -10,6 +10,10 @@ public class Credits : MonoBehaviour
     {
         home.Enable();
     }
+    void OnDisable()
+    {
+        home.Disable();
+    }
     void Update()
     {
         if(home.IsPressed())
