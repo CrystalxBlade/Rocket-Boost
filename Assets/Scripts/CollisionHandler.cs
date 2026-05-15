@@ -7,6 +7,11 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] ParticleSystem crashPartical, successPartical;
     [SerializeField] InputAction escape;
     [SerializeField] GameObject pauseScreen;
+    AudioManager am;
+    private void Awake()
+    {
+        am = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     bool pause;
     bool isControllable = true;
     void OnEnable()
@@ -66,6 +71,7 @@ public class CollisionHandler : MonoBehaviour
     {
         isControllable = false;
         successPartical.Play();
+        am.PlaySFX(am.sucess);
         GetComponent<Player>().enabled = false;
         Invoke("LoadNextLvl", delayLvl); 
     }
@@ -73,6 +79,7 @@ public class CollisionHandler : MonoBehaviour
     {
         isControllable = false;
         crashPartical.Play();
+        am.PlaySFX(am.crash);
         GetComponent<Player>().enabled = false;
         Invoke("Reload", delayLvl);
     }

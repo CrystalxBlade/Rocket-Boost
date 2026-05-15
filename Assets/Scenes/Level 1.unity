@@ -10139,7 +10139,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -25985,7 +25985,7 @@ GameObject:
   - component: {fileID: 1871833470}
   m_Layer: 0
   m_Name: Audio Manager
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26002,11 +26002,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f023f1e4e1758ea45bfab35e1d7b5ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  musicSource: {fileID: 0}
-  sfxSource: {fileID: 0}
-  background: {fileID: 0}
-  crash: {fileID: 0}
-  sucess: {fileID: 0}
+  musicSource: {fileID: 1189413779}
+  sfxSource: {fileID: 57507501}
+  background: {fileID: 8300000, guid: b70bdb36198f6004ebca8229776c8769, type: 3}
+  crash: {fileID: 8300000, guid: 044c177931f1a7c438f90c0d7e243b06, type: 3}
+  sucess: {fileID: 8300000, guid: c73cd9ad73c7ab94194d5baa6b5af92f, type: 3}
 --- !u!4 &1871833471
 Transform:
   m_ObjectHideFlags: 0
