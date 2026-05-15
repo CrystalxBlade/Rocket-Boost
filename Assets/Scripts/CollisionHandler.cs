@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float delayLvl;
-    [SerializeField] AudioClip crashSFX, successSFX;
-    AudioSource audioSource;
     [SerializeField] ParticleSystem crashPartical, successPartical;
     [SerializeField] InputAction escape;
     [SerializeField] GameObject pauseScreen;
@@ -21,7 +19,7 @@ public class CollisionHandler : MonoBehaviour
     }
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        
     }
     void Update()
     {
@@ -67,8 +65,6 @@ public class CollisionHandler : MonoBehaviour
     private void NextLvl()
     {
         isControllable = false;
-        audioSource.Stop();
-        audioSource.PlayOneShot(successSFX);
         successPartical.Play();
         GetComponent<Player>().enabled = false;
         Invoke("LoadNextLvl", delayLvl); 
@@ -76,8 +72,6 @@ public class CollisionHandler : MonoBehaviour
     void CrashState()
     {
         isControllable = false;
-        audioSource.Stop();
-        audioSource.PlayOneShot(crashSFX);
         crashPartical.Play();
         GetComponent<Player>().enabled = false;
         Invoke("Reload", delayLvl);
