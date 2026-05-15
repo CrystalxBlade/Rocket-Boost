@@ -7,14 +7,11 @@ public class Player : MonoBehaviour
     [SerializeField] InputAction rotation;
     [SerializeField] float thrustForce;
     [SerializeField] float rotationStrength;
-    [SerializeField] AudioClip mainEngine;
     [SerializeField] ParticleSystem mainBooster, leftBooster, rightBooster;
-    AudioSource audioSource;
     Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        audioSource = GetComponent<AudioSource>();
     }
     private void OnEnable()
     {
@@ -36,15 +33,7 @@ public class Player : MonoBehaviour
         if (thrust.IsPressed())
         {
             rb.AddRelativeForce(Vector3.up * thrustForce * Time.fixedDeltaTime);
-            if(!audioSource.isPlaying)
-            { 
-                audioSource.PlayOneShot(mainEngine);
-                mainBooster.Play();
-            }
-            else
-            {
-                audioSource.Stop();
-            }
+            mainBooster.Play();
         }
     }
     private void ProcessRotation()
