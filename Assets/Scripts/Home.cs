@@ -27,4 +27,8 @@ public class Home : MonoBehaviour
     {
         Application.Quit();
     }
+    public void ToggleSounds(GameObject soundsPanel)
+    {
+        soundsPanel.SetActive(!soundsPanel.activeSelf);
+    }
 }
