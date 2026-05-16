@@ -8,6 +8,11 @@ public class Player : MonoBehaviour
     [SerializeField] float thrustForce;
     [SerializeField] float rotationStrength;
     [SerializeField] ParticleSystem mainBooster, leftBooster, rightBooster;
+    AudioManager am;
+    private void Awake()
+    {
+        am = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     Rigidbody rb;
     void Start()
     {

@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip background;
     public AudioClip crash;
     public AudioClip sucess;
+    public AudioClip boost;
 
     private void Start()
     {
