@@ -38,7 +38,15 @@ public class Player : MonoBehaviour
         if (thrust.IsPressed())
         {
             rb.AddRelativeForce(Vector3.up * thrustForce * Time.fixedDeltaTime);
-            mainBooster.Play();
+            if(!am.sfxSource.isPlaying)
+            {
+                mainBooster.Play();
+                am.PlaySFX(am.boost);
+            }
+            else
+            {
+                am.sfxSource.Stop();
+            }
         }
     }
     private void ProcessRotation()
