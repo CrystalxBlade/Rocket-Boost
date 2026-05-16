@@ -62,6 +62,7 @@ Assets/Scripts/
  Player.cs
  Spawn.cs
  SplashLoader.cs
+ VolumeManager.cs
 Assets/TutorialInfo/Scripts/Readme.cs
 Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
 
