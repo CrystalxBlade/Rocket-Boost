@@ -70,6 +70,7 @@ Don’t worry — it’s just because the game is new.
 ## 📸 Screenshots
 
 ![image alt](https://github.com/CrystalxBlade/Rocket-Boost/blob/main/1st.png?raw=true)
+![image alt](https://github.com/CrystalxBlade/Rocket-Boost/blob/main/2nd.png?raw=true)
 
 
 
