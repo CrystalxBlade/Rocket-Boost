@@ -13,10 +13,10 @@ Control a futuristic rocket across dangerous space environments filled with obst
 
 The objective is simple:
 
-Reach the finish platform safely
-Avoid crashing into obstacles
-Master rocket movement and momentum
-Complete increasingly difficult levels
+- Reach the finish platform safely
+- Avoid crashing into obstacles
+- Master rocket movement and momentum
+- Complete increasingly difficult levels
 
 Every level becomes a tiny orbital exam where gravity, timing, and patience try to humble the player 🚀
 
