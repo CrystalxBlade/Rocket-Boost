@@ -69,7 +69,6 @@ Don’t worry — it’s just because the game is new.
 
 ## 📸 Screenshots
 
-*(Add your screenshots here later)*
 ![image alt](https://github.com/CrystalxBlade/Rocket-Boost/blob/main/1st.png?raw=true)
 
 
