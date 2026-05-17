@@ -6,6 +6,6 @@ public class MoveShip : MonoBehaviour
     void Update()
     {
         transform.Translate(direction * Time.deltaTime);
-        Destroy(gameObject, 10);
+        Destroy(gameObject, 16);
     }
 }
