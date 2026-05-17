@@ -70,6 +70,7 @@ Don’t worry — it’s just because the game is new.
 ## 📸 Screenshots
 
 *(Add your screenshots here later)*
+![image alt](https://github.com/CrystalxBlade/Sky-Ball/blob/2283c026b6ce695a49c3d08a6bd5257e531e1e71/Menu.png)
 
 
 
