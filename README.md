@@ -1,7 +1,7 @@
 
 # 🚀 Rocket Boost
 
-👉 Play the game: 
+👉 Play the game: https://crystal-x-blade.itch.io/rocket-boost
 
 ---
 
